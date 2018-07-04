@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///C:\Users\fuuji\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.3.5\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+ 
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <h3 class="mume-header" id="%E4%BD%BF%E7%94%A8knn%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0%E4%BA%8C%E5%80%BC%E5%8C%96%E6%95%B0%E5%AD%97%E5%92%8C%E9%AA%8C%E8%AF%81%E7%A0%81%E7%9A%84%E6%99%BA%E8%83%BD%E8%AF%86%E5%88%AB">使用KNN算法实现二值化数字和验证码的智能识别</h3>
+
+<p>Author：电创1601-冯子扬-201688035</p>
+<h3 class="mume-header" id="%E6%91%98%E8%A6%81">摘要</h3>
+
+<blockquote>
+<p>KNN(K Nearest Neighbor)算法是采用测量不同特征值之间的距离方法进行分类，也就是说对于每个样本数据，需要和训练集中的所有数据进行欧氏距离计算。KNN算法也是机器学习（Machine Learning）的最基础算法之一。</p>
+</blockquote>
+<p>在这次课程设计中，实现使用KNN算法实现识别转换为txt格式的二值化数字。</p>
+<p><strong>关键字</strong>：KNN, Machine Learning, Python, 二值化数字识别</p>
+<h3 class="mume-header" id="1-%E7%AE%80%E8%BF%B0knn%E7%AE%97%E6%B3%95">1. 简述KNN算法</h3>
+
+<h4 class="mume-header" id="11-%E4%BB%80%E4%B9%88%E6%98%AFk-nearest-neighbor">1.1 什么是K Nearest Neighbor?</h4>
+
+<p><strong>KNN</strong>是通过测量不同特征值之间的距离进行分类的方法。</p>
+<p>K近邻算法，即是给定一个训练数据集，对新的输入实例，在训练数据集中找到与该实例最邻近的K个实例，这K个实例的多数属于某个类，就把该输入实例分类到这个类中。（这就类似于现实生活中少数服从多数的思想）以引自维基百科上的一幅图为例：</p>
+<p><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/machine-learning/v2-c3f1d2553e7467d7da5f9cd538d2b49a_hd.jpg" alt="1"></p>
+<p>如上图所示，有两类不同的样本数据，分别用蓝色的小正方形和红色的小三角形表示，而图正中间的那个绿色的圆所标示的数据则是待分类的数据。这也就是我们的目的，来了一个新的数据点，我要得到它的类别是什么？好的，下面我们根据k近邻的思想来给绿色圆点进行分类：</p>
+<ol>
+<li>如果K=3，绿色圆点的最邻近的3个点是2个红色小三角形和1个蓝色小正方形，少数从属于多数，基于统计的方法，判定绿色的这个待分类点属于红色的三角形一类。</li>
+<li>如果K=5，绿色圆点的最邻近的5个邻居是2个红色三角形和3个蓝色的正方形，还是少数从属于多数，基于统计的方法，判定绿色的这个待分类点属于蓝色的正方形一类。</li>
+</ol>
+<h4 class="mume-header" id="12-%E6%80%8E%E4%B9%88%E5%BA%A6%E9%87%8F%E6%9C%80%E9%82%BB%E8%BF%91%E8%B7%9D%E7%A6%BB">1.2 怎么度量“最邻近距离”？</h4>
+
+<p>在1.1中说到，k近邻算法是在训练数据集中找到与该实例最邻近的K个实例，这K个实例的多数属于某个类，那么判断预测点属于那个类。</p>
+<p>定义中所说的最邻近是如何度量呢？我们怎么知道谁跟测试点最邻近。这里就会引出我们几种度量俩个点之间距离的标准：</p>
+<p>设特征空间<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.07847em;">X</span></span></span></span>是n维实数向量空间<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>R</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">R^{n}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathit" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">n</span></span></span></span></span></span></span></span></span></span></span></span>, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub><mi mathvariant="normal">.</mi><msub><mi>x</mi><mi>j</mi></msub><mo>∈</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x_i.x_j\in X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="base"><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mord">.</span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"></span></span></span></span></span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord mathit" style="margin-right:0.07847em;">X</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>=</mo><mo>(</mo><msubsup><mi>x</mi><mi>i</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></msubsup><mo separator="true">,</mo><msubsup><mi>x</mi><mi>i</mi><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow></msubsup><mo separator="true">,</mo><mo>⋯</mo><mspace width="0.16667em"></mspace><mo separator="true">,</mo><msubsup><mi>x</mi><mi>i</mi><mrow><mo>(</mo><mi>n</mi><mo>)</mo></mrow></msubsup><msup><mo>)</mo><mi>T</mi></msup></mrow><annotation encoding="application/x-tex">x_i = (x_i^{(1)},x_i^{(2)},\cdots,x_i^{(n)})^T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.0448em;"></span><span class="strut bottom" style="height:1.321664em;vertical-align:-0.27686399999999994em;"></span><span class="base"><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.4231360000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mtight">1</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.27686399999999994em;"></span></span></span></span></span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.4231360000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mtight">2</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.27686399999999994em;"></span></span></span></span></span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="minner">⋯</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mspace thinspace"></span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.4231360000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathit mtight">n</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.27686399999999994em;"></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.13889em;">T</span></span></span></span></span></span></span></span></span></span></span>, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>x</mi><mi>j</mi></msub><mo>=</mo><mo>(</mo><msubsup><mi>x</mi><mi>j</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></msubsup><mo separator="true">,</mo><msubsup><mi>x</mi><mi>j</mi><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow></msubsup><mo separator="true">,</mo><mo>⋯</mo><mspace width="0.16667em"></mspace><mo separator="true">,</mo><msubsup><mi>x</mi><mi>j</mi><mrow><mo>(</mo><mi>n</mi><mo>)</mo></mrow></msubsup><msup><mo>)</mo><mi>T</mi></msup></mrow><annotation encoding="application/x-tex">x_j = (x_j^{(1)},x_j^{(2)},\cdots,x_j^{(n)})^T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.0448em;"></span><span class="strut bottom" style="height:1.4577719999999998em;vertical-align:-0.4129719999999999em;"></span><span class="base"><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"></span></span></span></span></span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.4231360000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mtight">1</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4129719999999999em;"></span></span></span></span></span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.4231360000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mtight">2</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4129719999999999em;"></span></span></span></span></span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="minner">⋯</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mspace thinspace"></span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.4231360000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathit mtight">n</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4129719999999999em;"></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.13889em;">T</span></span></span></span></span></span></span></span></span></span></span>, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub><mo separator="true">,</mo><msub><mi>x</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">x_i,x_j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="base"><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"></span></span></span></span></span></span></span></span>的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">L_p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="base"><span class="mord"><span class="mord mathit">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">p</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"></span></span></span></span></span></span></span></span>的距离定义为：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mi>p</mi></msub><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mo separator="true">,</mo><msub><mi>x</mi><mi>j</mi></msub><mo>)</mo><mo>=</mo><msup><mrow><mo fence="true">(</mo><munderover><mo>∑</mo><mrow><mi>l</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi mathvariant="normal">∣</mi><msubsup><mi>x</mi><mi>i</mi><mrow><mo>(</mo><mi>l</mi><mo>)</mo></mrow></msubsup><mo>−</mo><msubsup><mi>x</mi><mi>j</mi><mrow><mo>(</mo><mi>l</mi><mo>)</mo></mrow></msubsup><msup><mi mathvariant="normal">∣</mi><mi>p</mi></msup><mo fence="true">)</mo></mrow><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mi>p</mi></mrow></msup></mrow><annotation encoding="application/x-tex">L_p(x_i,x_j)=\left(\sum_{l=1}^n |x_i^{(l)}-x_j^{(l)}|^p\right)^{1/p}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:2.0279em;"></span><span class="strut bottom" style="height:3.330013em;vertical-align:-1.302113em;"></span><span class="base"><span class="mord"><span class="mord mathit">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">p</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"></span></span></span></span></span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="minner"><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">(</span></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.8478869999999998em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.0500049999999996em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.300005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.302113em;"></span></span></span></span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord">∣</span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.4231360000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.276864em;"></span></span></span></span></span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.4231360000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.412972em;"></span></span></span></span></span><span class="mord"><span class="mord">∣</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.714392em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">p</span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size4">)</span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:2.0279em;"><span style="top:-4.2029000000000005em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">/</span><span class="mord mathit mtight">p</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>这里<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p\geq 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord mathit">p</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≥</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord">1</span></span></span></span>. 当<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">p=2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord mathit">p</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord">2</span></span></span></span>时，称为欧式距离(Euclidean Distance)，即：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mo separator="true">,</mo><msub><mi>x</mi><mi>j</mi></msub><mo>)</mo><mo>=</mo><msup><mrow><mo fence="true">(</mo><munderover><mo>∑</mo><mrow><mi>l</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi mathvariant="normal">∣</mi><msubsup><mi>x</mi><mi>i</mi><mrow><mo>(</mo><mi>l</mi><mo>)</mo></mrow></msubsup><mo>−</mo><msubsup><mi>x</mi><mi>j</mi><mrow><mo>(</mo><mi>l</mi><mo>)</mo></mrow></msubsup><msup><mi mathvariant="normal">∣</mi><mn>2</mn></msup><mo fence="true">)</mo></mrow><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">L_2(x_i,x_j)=\left(\sum_{l=1}^n |x_i^{(l)}-x_j^{(l)}|^2\right)^{1/2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:2.0279em;"></span><span class="strut bottom" style="height:3.330013em;vertical-align:-1.302113em;"></span><span class="base"><span class="mord"><span class="mord mathit">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"></span></span></span></span></span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="minner"><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">(</span></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.8478869999999998em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.0500049999999996em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.300005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.302113em;"></span></span></span></span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord">∣</span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.4231360000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.276864em;"></span></span></span></span></span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.4231360000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.412972em;"></span></span></span></span></span><span class="mord"><span class="mord">∣</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size4">)</span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:2.0279em;"><span style="top:-4.2029000000000005em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">/</span><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>当<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p=1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord mathit">p</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord">1</span></span></span></span>时，称为曼哈顿距离(Manhattan Distance)，即：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mo separator="true">,</mo><msub><mi>x</mi><mi>j</mi></msub><mo>)</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>l</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi mathvariant="normal">∣</mi><msubsup><mi>x</mi><mi>i</mi><mrow><mo>(</mo><mi>l</mi><mo>)</mo></mrow></msubsup><mo>−</mo><msubsup><mi>x</mi><mi>j</mi><mrow><mo>(</mo><mi>l</mi><mo>)</mo></mrow></msubsup><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">L_1(x_i,x_j)=\sum_{l=1}^n |x_i^{(l)}-x_j^{(l)}|</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.6513970000000002em;"></span><span class="strut bottom" style="height:2.9535100000000005em;vertical-align:-1.302113em;"></span><span class="base"><span class="mord"><span class="mord mathit">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"></span></span></span></span></span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.8478869999999998em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.0500049999999996em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.300005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.302113em;"></span></span></span></span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord">∣</span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.4231360000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.276864em;"></span></span></span></span></span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.4231360000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.412972em;"></span></span></span></span></span><span class="mord">∣</span></span></span></span></span></p>
+<p>当<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">p=\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord mathit">p</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord">∞</span></span></span></span>时，它是各个坐标距离的最大值，即：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mi mathvariant="normal">∞</mi></msub><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mo separator="true">,</mo><msub><mi>x</mi><mi>j</mi></msub><mo>)</mo><mo>=</mo><mi>m</mi><mi>a</mi><msub><mi>x</mi><mi>l</mi></msub><mi mathvariant="normal">∣</mi><msubsup><mi>x</mi><mi>i</mi><mrow><mo>(</mo><mi>l</mi><mo>)</mo></mrow></msubsup><mo>−</mo><msubsup><mi>x</mi><mi>j</mi><mrow><mo>(</mo><mi>l</mi><mo>)</mo></mrow></msubsup><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">L_\infty(x_i,x_j)=max_l |x_i^{(l)}-x_j^{(l)}|</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.0448em;"></span><span class="strut bottom" style="height:1.4577719999999998em;vertical-align:-0.412972em;"></span><span class="base"><span class="mord"><span class="mord mathit">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">∞</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"></span></span></span></span></span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord mathit">m</span><span class="mord mathit">a</span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mord">∣</span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.4231360000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.276864em;"></span></span></span></span></span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.4231360000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathit mtight" style="margin-right:0.01968em;">l</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.412972em;"></span></span></span></span></span><span class="mord">∣</span></span></span></span></span></p>
+<p><strong>其中当p=2的时候，就是我们最常见的欧式距离，我们也一般都用欧式距离来衡量我们高维空间中俩点的距离。在实际应用中，距离函数的选择应该根据数据的特性和分析的需要而定，一般选取p=2欧式距离表示，这不是本文的重点。</strong></p>
+<h3 class="mume-header" id="2-%E4%BD%BF%E7%94%A8knn%E7%AE%97%E6%B3%95%E8%AF%86%E5%88%AB%E4%BA%8C%E5%80%BC%E5%8C%96%E6%95%B0%E5%AD%97">2. 使用KNN算法识别二值化数字</h3>
+
+<h4 class="mume-header" id="21-%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0%E6%AD%A5%E9%AA%A4">2.1 算法实现步骤</h4>
+
+<ol>
+<li>
+<p>待处理数据准备<br>
+目录trainingdigits中包含大约2000个例子，数字从0到9，每个数字大约有200个样本；目录testdigits中包含大约900个测试数据；我们使用目录trainingdigits中的数据训练分类器，使用目录testdigits中的数据测试分类器的效果。</p>
+</li>
+<li>
+<p>将32*32的二进制图像矩阵转换为1*1024的向量</p>
+<p>下面是32*32的黑白图像：</p>
+<p><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/machine-learning/1797187-0c9f324f1b58d830.png" alt="2"></p>
+<p>为了方便处理，根据灰度处理成二进制文本文件（可从图上看出是数字2）：</p>
+<p><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/machine-learning/NT129.png" alt="3"></p>
+<p>代码：</p>
+<pre data-role="codeBlock" data-info="python" class="language-python"><span class="token comment">#将32*32的矩阵读为1*1024</span>
+<span class="token keyword">def</span> <span class="token function">img2vector</span><span class="token punctuation">(</span>filename<span class="token punctuation">)</span><span class="token punctuation">:</span>
+	returnVect <span class="token operator">=</span> zeros<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1024</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+	fr <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span>filename<span class="token punctuation">)</span>
+	<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+		linestr <span class="token operator">=</span> fr<span class="token punctuation">.</span>readline<span class="token punctuation">(</span><span class="token punctuation">)</span>
+		<span class="token keyword">for</span> j <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+			returnVect<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">32</span><span class="token operator">*</span>i<span class="token operator">+</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>linestr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span>
+	<span class="token keyword">return</span> returnVect
+</pre></li>
+<li>
+<p>运行程序，统计识别结果<br>
+<img src="https://raw.githubusercontent.com/fuujiro/pictures/master/machine-learning/VF148.png" alt="4"></p>
+</li>
+</ol>
+<h4 class="mume-header" id="22-%E6%BA%90%E4%BB%A3%E7%A0%81">2.2 源代码</h4>
+
+<pre data-role="codeBlock" data-info="python" class="language-python"> <span class="token comment"># -*- coding: utf-8 -*-</span>
+<span class="token triple-quoted-string string">'''
+Copyright (C), 2018, fuujiro (电创1601冯子扬 201688035)
+Date:  2018-06-29 11:56
+
+@author: fuujiro 
+@mail: fuujiro@foxmail.com
+@version: 1.0
+@Environment: Python 2.7.15
+
+'''</span>
+
+<span class="token keyword">from</span> numpy <span class="token keyword">import</span> <span class="token operator">*</span>
+<span class="token keyword">from</span> os <span class="token keyword">import</span> listdir
+<span class="token keyword">import</span> KNN
+<span class="token keyword">from</span> numpy<span class="token punctuation">.</span>core <span class="token keyword">import</span> multiarray
+
+<span class="token keyword">def</span> <span class="token function">img2vector</span><span class="token punctuation">(</span>filename<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token string">'图像文件转换成矩阵'</span>
+    returnVect <span class="token operator">=</span> zeros<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1024</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    fr <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span>filename<span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">)</span><span class="token punctuation">:</span>             <span class="token comment">#将32行合并成一行</span>
+        lineStr <span class="token operator">=</span> fr<span class="token punctuation">.</span>readline<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> j <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            returnVect<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">32</span><span class="token operator">*</span>i<span class="token operator">+</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>lineStr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> returnVect               <span class="token comment">#一个样本最终成为一个1*1024的向量</span>
+
+
+<span class="token keyword">def</span> <span class="token function">handwritingClassTest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token string">'手写识别测试函数，调用了KNN模块的KNN分类器函数'</span>
+    hwLabels <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    trainingFileList <span class="token operator">=</span> listdir<span class="token punctuation">(</span><span class="token string">'trainingDigits'</span><span class="token punctuation">)</span>
+    m <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>trainingFileList<span class="token punctuation">)</span>
+    trainingMat <span class="token operator">=</span> zeros<span class="token punctuation">(</span><span class="token punctuation">(</span>m<span class="token punctuation">,</span><span class="token number">1024</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>m<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        fileNameStr <span class="token operator">=</span> trainingFileList<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        fileStr <span class="token operator">=</span> fileNameStr<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+        classNumStr <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>fileStr<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'_'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        hwLabels<span class="token punctuation">.</span>append<span class="token punctuation">(</span>classNumStr<span class="token punctuation">)</span>
+        trainingMat<span class="token punctuation">[</span>i<span class="token punctuation">,</span><span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token operator">=</span> img2vector<span class="token punctuation">(</span><span class="token string">'trainingDigits/%s'</span> <span class="token operator">%</span> fileNameStr<span class="token punctuation">)</span>
+    
+    testFileList <span class="token operator">=</span> listdir<span class="token punctuation">(</span><span class="token string">'testDigits'</span><span class="token punctuation">)</span>
+    errorCount <span class="token operator">=</span> <span class="token number">0.0</span>
+    mTest <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>testFileList<span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>mTest<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        fileNameStr <span class="token operator">=</span> testFileList<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        fileStr <span class="token operator">=</span> fileNameStr<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+        classNumStr <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>fileStr<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'_'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        vectorUnderTest <span class="token operator">=</span> img2vector<span class="token punctuation">(</span><span class="token string">'testDigits/%s'</span> <span class="token operator">%</span> fileNameStr<span class="token punctuation">)</span>
+        classifierResult <span class="token operator">=</span> KNN<span class="token punctuation">.</span>classify0<span class="token punctuation">(</span>vectorUnderTest<span class="token punctuation">,</span> trainingMat<span class="token punctuation">,</span> hwLabels<span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span> <span class="token string">"in #%d, the classifier came back with: %d, the real answer is: %d"</span> <span class="token operator">%</span> <span class="token punctuation">(</span>i<span class="token punctuation">,</span> classifierResult<span class="token punctuation">,</span> classNumStr<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>classifierResult <span class="token operator">!=</span> classNumStr<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            errorCount <span class="token operator">+=</span> <span class="token number">1.0</span>
+    <span class="token keyword">print</span> <span class="token string">"\nthe total number of errors is: %d"</span> <span class="token operator">%</span> errorCount
+    <span class="token keyword">print</span> <span class="token string">"\nthe total error rate is: %f"</span> <span class="token operator">%</span> <span class="token punctuation">(</span>errorCount<span class="token operator">/</span><span class="token builtin">float</span><span class="token punctuation">(</span>mTest<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    
+handwritingClassTest<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</pre><h3 class="mume-header" id="3-%E4%BD%BF%E7%94%A8knn%E7%AE%97%E6%B3%95%E8%AF%86%E5%88%AB%E9%AA%8C%E8%AF%81%E7%A0%81">3. 使用KNN算法识别验证码</h3>
+
+<p>各大门户网站为防止DDos恶意攻击都设置验证码。然而验证码的存在，无疑让我们作为用户快速认证的想法破灭了，但是No big problem，用KNN算法就能实现识别验证码，再写个脚本，以后的所有验证码就可以自动输入。</p>
+<p>验证码是这样的：</p>
+<p><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/machine-learning/test.jpg" alt="5"></p>
+<p>其实就是简单地把字符进行旋转然后加上一些微弱的噪点形成的。反向思考，首先二值化去掉噪点，然后把单个字符分割出来，最后旋转至标准方向，然后从这些处理好的图片中选出模板，最后每次新来一张验证码就按相同方式处理，然后和这些模板进行比较，选择判别距离最近的一个模板作为其判断结果（亦即KNN的思想）。</p>
+<h4 class="mume-header" id="31-%E8%8E%B7%E5%8F%96%E9%AA%8C%E8%AF%81%E7%A0%81">3.1 获取验证码</h4>
+
+<p>通过爬虫爬取大量验证码：</p>
+<pre data-role="codeBlock" data-info="python" class="language-python"><span class="token comment"># -*- coding:UTF-8 -*-</span>
+<span class="token operator">&lt;</span>p <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"mume-header "</span> <span class="token builtin">id</span><span class="token operator">=</span><span class="token string">"-codingutf-8-"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+
+<span class="token keyword">import</span> urllib<span class="token punctuation">,</span>urllib2<span class="token punctuation">,</span>cookielib<span class="token punctuation">,</span>string<span class="token punctuation">,</span>Image
+<span class="token keyword">def</span> <span class="token function">getchk</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment">#创建cookie对象</span>
+    cookie <span class="token operator">=</span> cookielib<span class="token punctuation">.</span>LWPCookieJar<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    cookieSupport<span class="token operator">=</span> urllib2<span class="token punctuation">.</span>HTTPCookieProcessor<span class="token punctuation">(</span>cookie<span class="token punctuation">)</span>
+    opener <span class="token operator">=</span> urllib2<span class="token punctuation">.</span>build_opener<span class="token punctuation">(</span>cookieSupport<span class="token punctuation">,</span> urllib2<span class="token punctuation">.</span>HTTPHandler<span class="token punctuation">)</span>
+    urllib2<span class="token punctuation">.</span>install_opener<span class="token punctuation">(</span>opener<span class="token punctuation">)</span> 
+    <span class="token comment">#首次与教务系统链接获得cookie#</span>
+    <span class="token comment">#伪装browser</span>
+    headers <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token string">'Accept'</span><span class="token punctuation">:</span><span class="token string">'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'</span><span class="token punctuation">,</span>
+        <span class="token string">'Accept-Encoding'</span><span class="token punctuation">:</span><span class="token string">'gzip,deflate'</span><span class="token punctuation">,</span>
+        <span class="token string">'Accept-Language'</span><span class="token punctuation">:</span><span class="token string">'zh-CN,zh;q=0.8'</span><span class="token punctuation">,</span>
+        <span class="token string">'User-Agent'</span><span class="token punctuation">:</span><span class="token string">'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36'</span>
+    <span class="token punctuation">}</span>
+    req0 <span class="token operator">=</span> urllib2<span class="token punctuation">.</span>Request<span class="token punctuation">(</span>
+            url <span class="token operator">=</span><span class="token string">'http://mis.teach.ustc.edu.cn'</span><span class="token punctuation">,</span>
+            headers <span class="token operator">=</span> headers               <span class="token comment">#请求头</span>
+    <span class="token punctuation">)</span>
+    <span class="token comment"># 捕捉http错误</span>
+    <span class="token keyword">try</span> <span class="token punctuation">:</span>
+        result0 <span class="token operator">=</span> urllib2<span class="token punctuation">.</span>urlopen<span class="token punctuation">(</span>req0<span class="token punctuation">)</span>
+    <span class="token keyword">except</span> urllib2<span class="token punctuation">.</span>HTTPError<span class="token punctuation">,</span>e<span class="token punctuation">:</span>
+        <span class="token keyword">print</span> e<span class="token punctuation">.</span>code
+    <span class="token comment">#提取cookie</span>
+    getcookie <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">''</span><span class="token punctuation">,</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> item <span class="token keyword">in</span> cookie<span class="token punctuation">:</span>
+        getcookie<span class="token punctuation">.</span>append<span class="token punctuation">(</span>item<span class="token punctuation">.</span>name<span class="token punctuation">)</span>
+        getcookie<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token string">"="</span><span class="token punctuation">)</span>
+        getcookie<span class="token punctuation">.</span>append<span class="token punctuation">(</span>item<span class="token punctuation">.</span>value<span class="token punctuation">)</span>
+        getcookie <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>getcookie<span class="token punctuation">)</span>
+
+    <span class="token comment">#修改headers</span>
+    headers<span class="token punctuation">[</span><span class="token string">"Origin"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"http://mis.teach.ustc.edu.cn"</span>
+    headers<span class="token punctuation">[</span><span class="token string">"Referer"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"http://mis.teach.ustc.edu.cn/userinit.do"</span>
+    headers<span class="token punctuation">[</span><span class="token string">"Content-Type"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"application/x-www-form-urlencoded"</span>
+    headers<span class="token punctuation">[</span><span class="token string">"Cookie"</span><span class="token punctuation">]</span> <span class="token operator">=</span> getcookie
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        req <span class="token operator">=</span> urllib2<span class="token punctuation">.</span>Request<span class="token punctuation">(</span>
+            url <span class="token operator">=</span><span class="token string">"http://mis.teach.ustc.edu.cn/randomImage.do?date='1469451446894'"</span><span class="token punctuation">,</span>
+            headers <span class="token operator">=</span> headers                 <span class="token comment">#请求头</span>
+        <span class="token punctuation">)</span>
+        response <span class="token operator">=</span> urllib2<span class="token punctuation">.</span>urlopen<span class="token punctuation">(</span>req<span class="token punctuation">)</span>
+        status <span class="token operator">=</span> response<span class="token punctuation">.</span>getcode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        picData <span class="token operator">=</span> response<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> status <span class="token operator">==</span> <span class="token number">200</span><span class="token punctuation">:</span>
+            localPic <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"./source/"</span><span class="token operator">+</span><span class="token builtin">str</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">".jpg"</span><span class="token punctuation">,</span> <span class="token string">"wb"</span><span class="token punctuation">)</span>
+            localPic<span class="token punctuation">.</span>write<span class="token punctuation">(</span>picData<span class="token punctuation">)</span>
+            localPic<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span> <span class="token string">"failed to get Check Code "</span>
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    getchk<span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span>
+</pre><p>获得到足够多的验证码后（大约100张）即可。<br>
+<img src="https://raw.githubusercontent.com/fuujiro/pictures/master/machine-learning/1686205455-5796296796001_articlex.png" alt="6"></p>
+<h4 class="mume-header" id="32-%E4%BA%8C%E5%80%BC%E5%8C%96">3.2 二值化</h4>
+
+<p>我们可以使用matlab来进行二值化处理，图像处理函数能省下很多时间，遍历验证码所储存文件夹，对每一张验证码图片进行二值化处理，把处理过的图片存入新建文件夹下。代码如下：</p>
+<pre data-role="codeBlock" data-info="python" class="language-python">mydir<span class="token operator">=</span><span class="token string">'./source/'</span><span class="token punctuation">;</span>
+bw <span class="token operator">=</span> <span class="token string">'./outcome/'</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> mydir<span class="token punctuation">(</span>end<span class="token punctuation">)</span><span class="token operator">~</span><span class="token operator">=</span>'\'
+    mydir<span class="token operator">=</span><span class="token punctuation">[</span>mydir<span class="token punctuation">,</span>'\'<span class="token punctuation">]</span><span class="token punctuation">;</span>
+end
+DIRS<span class="token operator">=</span><span class="token builtin">dir</span><span class="token punctuation">(</span><span class="token punctuation">[</span>mydir<span class="token punctuation">,</span><span class="token string">'*.jpg'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token operator">%</span>扩展名
+n<span class="token operator">=</span>length<span class="token punctuation">(</span>DIRS<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">:</span>n
+    <span class="token keyword">if</span> <span class="token operator">~</span>DIRS<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>isdir
+        img <span class="token operator">=</span> imread<span class="token punctuation">(</span>strcat<span class="token punctuation">(</span>mydir<span class="token punctuation">,</span>DIRS<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>name <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        img <span class="token operator">=</span> rgb2gray<span class="token punctuation">(</span>img<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">%</span>灰度化
+        img <span class="token operator">=</span> im2bw<span class="token punctuation">(</span>img<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">%</span><span class="token number">0</span><span class="token operator">-</span><span class="token number">1</span>二值化
+        name <span class="token operator">=</span> strcat<span class="token punctuation">(</span>bw<span class="token punctuation">,</span>DIRS<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span>
+        imwrite<span class="token punctuation">(</span>img<span class="token punctuation">,</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    end
+end
+</pre><p>处理后：<br>
+<img src="https://raw.githubusercontent.com/fuujiro/pictures/master/machine-learning/2902168946-579629a9bcdb4_articlex.png" alt="7"></p>
+<h4 class="mume-header" id="33-%E5%88%86%E5%89%B2">3.3 分割</h4>
+
+<pre data-role="codeBlock" data-info="python" class="language-python">mydir<span class="token operator">=</span><span class="token string">'./outcome/'</span><span class="token punctuation">;</span>
+letter <span class="token operator">=</span> <span class="token string">'./letter/'</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> mydir<span class="token punctuation">(</span>end<span class="token punctuation">)</span><span class="token operator">~</span><span class="token operator">=</span>'\'
+    mydir<span class="token operator">=</span><span class="token punctuation">[</span>mydir<span class="token punctuation">,</span>'\'<span class="token punctuation">]</span><span class="token punctuation">;</span>
+end
+DIRS<span class="token operator">=</span><span class="token builtin">dir</span><span class="token punctuation">(</span><span class="token punctuation">[</span>mydir<span class="token punctuation">,</span><span class="token string">'*.jpg'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token operator">%</span>扩展名
+n<span class="token operator">=</span>length<span class="token punctuation">(</span>DIRS<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">:</span>n
+    <span class="token keyword">if</span> <span class="token operator">~</span>DIRS<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>isdir
+        img <span class="token operator">=</span> imread<span class="token punctuation">(</span>strcat<span class="token punctuation">(</span>mydir<span class="token punctuation">,</span>DIRS<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>name <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        img <span class="token operator">=</span> im2bw<span class="token punctuation">(</span>img<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">%</span>二值化
+        img <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">-</span>img<span class="token punctuation">;</span><span class="token operator">%</span>颜色反转让字符成为联通域，方便去除噪点
+        <span class="token keyword">for</span> ii <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">:</span><span class="token number">3</span>
+            region <span class="token operator">=</span> <span class="token punctuation">[</span>ii<span class="token operator">*</span><span class="token number">20</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">19</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token operator">%</span>把一张验证码分成四个<span class="token number">20</span><span class="token operator">*</span><span class="token number">20</span>大小的字符图片
+            subimg <span class="token operator">=</span> imcrop<span class="token punctuation">(</span>img<span class="token punctuation">,</span>region<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            imlabel <span class="token operator">=</span> bwlabel<span class="token punctuation">(</span>subimg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">%</span>             imshow<span class="token punctuation">(</span>imlabel<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token builtin">max</span><span class="token punctuation">(</span><span class="token builtin">max</span><span class="token punctuation">(</span>imlabel<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">></span><span class="token number">1</span> <span class="token operator">%</span> 说明有噪点，要去除
+<span class="token operator">%</span>                 <span class="token builtin">max</span><span class="token punctuation">(</span><span class="token builtin">max</span><span class="token punctuation">(</span>imlabel<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token operator">%</span>                 imshow<span class="token punctuation">(</span>subimg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                stats <span class="token operator">=</span> regionprops<span class="token punctuation">(</span>imlabel<span class="token punctuation">,</span><span class="token string">'Area'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                area <span class="token operator">=</span> cat<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span>stats<span class="token punctuation">.</span>Area<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+                maxindex <span class="token operator">=</span> find<span class="token punctuation">(</span>area <span class="token operator">==</span> <span class="token builtin">max</span><span class="token punctuation">(</span>area<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                area<span class="token punctuation">(</span>maxindex<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>          
+                secondindex <span class="token operator">=</span> find<span class="token punctuation">(</span>area <span class="token operator">==</span> <span class="token builtin">max</span><span class="token punctuation">(</span>area<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        
+                imindex <span class="token operator">=</span> ismember<span class="token punctuation">(</span>imlabel<span class="token punctuation">,</span>secondindex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                subimg<span class="token punctuation">(</span>imindex<span class="token operator">==</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span><span class="token operator">%</span>去掉第二大连通域，噪点不可能比字符大，所以第二大的就是噪点
+            end
+            name <span class="token operator">=</span> strcat<span class="token punctuation">(</span>letter<span class="token punctuation">,</span>DIRS<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>name<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">:</span>length<span class="token punctuation">(</span>DIRS<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">'_'</span><span class="token punctuation">,</span>num2str<span class="token punctuation">(</span>ii<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">'.jpg'</span><span class="token punctuation">)</span>
+            imwrite<span class="token punctuation">(</span>subimg<span class="token punctuation">,</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        end
+    end
+end
+</pre><p>处理后：<br>
+<img src="https://raw.githubusercontent.com/fuujiro/pictures/master/machine-learning/1467251251-57962a255f015_articlex.png" alt="8"></p>
+<h4 class="mume-header" id="34-%E6%97%8B%E8%BD%AC">3.4 旋转</h4>
+
+<pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword">if</span> mydir<span class="token punctuation">(</span>end<span class="token punctuation">)</span><span class="token operator">~</span><span class="token operator">=</span>'\'
+    mydir<span class="token operator">=</span><span class="token punctuation">[</span>mydir<span class="token punctuation">,</span>'\'<span class="token punctuation">]</span><span class="token punctuation">;</span>
+end
+DIRS<span class="token operator">=</span><span class="token builtin">dir</span><span class="token punctuation">(</span><span class="token punctuation">[</span>mydir<span class="token punctuation">,</span><span class="token string">'*.jpg'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token operator">%</span>扩展名
+n<span class="token operator">=</span>length<span class="token punctuation">(</span>DIRS<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">:</span>n
+    <span class="token keyword">if</span> <span class="token operator">~</span>DIRS<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>isdir
+        img <span class="token operator">=</span> imread<span class="token punctuation">(</span>strcat<span class="token punctuation">(</span>mydir<span class="token punctuation">,</span>DIRS<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>name <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        img <span class="token operator">=</span> im2bw<span class="token punctuation">(</span>img<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        minwidth <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> angle <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">60</span><span class="token punctuation">:</span><span class="token number">60</span>
+            imgr<span class="token operator">=</span>imrotate<span class="token punctuation">(</span>img<span class="token punctuation">,</span>angle<span class="token punctuation">,</span><span class="token string">'bilinear'</span><span class="token punctuation">,</span><span class="token string">'crop'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">%</span>crop 避免图像大小变化
+            imlabel <span class="token operator">=</span> bwlabel<span class="token punctuation">(</span>imgr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            stats <span class="token operator">=</span> regionprops<span class="token punctuation">(</span>imlabel<span class="token punctuation">,</span><span class="token string">'Area'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            area <span class="token operator">=</span> cat<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span>stats<span class="token punctuation">.</span>Area<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            maxindex <span class="token operator">=</span> find<span class="token punctuation">(</span>area <span class="token operator">==</span> <span class="token builtin">max</span><span class="token punctuation">(</span>area<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            imindex <span class="token operator">=</span> ismember<span class="token punctuation">(</span>imlabel<span class="token punctuation">,</span>maxindex<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">%</span>最大连通域为<span class="token number">1</span>
+            <span class="token punctuation">[</span>y<span class="token punctuation">,</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> find<span class="token punctuation">(</span>imindex<span class="token operator">==</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            width <span class="token operator">=</span> <span class="token builtin">max</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token operator">-</span><span class="token builtin">min</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> width<span class="token operator">&lt;</span>minwidth
+                minwidth <span class="token operator">=</span> width<span class="token punctuation">;</span>
+                imgrr <span class="token operator">=</span> imgr<span class="token punctuation">;</span>
+            end
+        end
+        name <span class="token operator">=</span> strcat<span class="token punctuation">(</span>rotate<span class="token punctuation">,</span>DIRS<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span>
+        imwrite<span class="token punctuation">(</span>imgrr<span class="token punctuation">,</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    end
+end
+</pre><h4 class="mume-header" id="35-%E8%BF%90%E8%A1%8C%E5%A4%84%E7%90%86%E4%BB%A3%E7%A0%81%E7%BB%9F%E8%AE%A1%E8%AF%86%E5%88%AB%E7%BB%93%E6%9E%9C">3.5 运行处理代码，统计识别结果</h4>
+
+<p><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/machine-learning/test.jpg" alt="9"><br>
+<img src="https://raw.githubusercontent.com/fuujiro/pictures/master/machine-learning/HK148.png" alt="10"><br>
+<img src="https://raw.githubusercontent.com/fuujiro/pictures/master/machine-learning/AM148.png" alt="11"></p>
+<p><strong>结果</strong>：验证码识别正确。</p>
+<h4 class="mume-header" id="36-%E6%BA%90%E4%BB%A3%E7%A0%81">3.6 源代码</h4>
+
+<pre data-role="codeBlock" data-info="python" class="language-python"> <span class="token comment"># -*- coding: utf-8 -*-</span>
+<span class="token triple-quoted-string string">'''
+Copyright (C), 2018, fuujiro (电创1601冯子扬 201688035)
+Date:  2018-06-29 11:56
+
+@author: fuujiro 
+@mail: fuujiro@foxmail.com
+@version: 1.0
+@Environment: Python 2.7.15
+
+'''</span>
+
+<span class="token keyword">import</span> operator
+<span class="token keyword">import</span> pdb
+<span class="token keyword">from</span> os <span class="token keyword">import</span> listdir
+<span class="token keyword">from</span> numpy <span class="token keyword">import</span> <span class="token operator">*</span>
+<span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image
+
+
+<span class="token keyword">class</span> <span class="token class-name">MyKnn</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    <span class="token keyword">def</span> <span class="token function">encode_img</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> im<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment">#把图片转化成一维数组</span>
+        width <span class="token operator">=</span> im<span class="token punctuation">.</span>size<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+        height <span class="token operator">=</span> im<span class="token punctuation">.</span>size<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+        img_encoding <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> width<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">for</span> j <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> height<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                cl <span class="token operator">=</span> im<span class="token punctuation">.</span>getpixel<span class="token punctuation">(</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> j<span class="token punctuation">)</span><span class="token punctuation">)</span>
+                clall <span class="token operator">=</span> cl<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">+</span> cl<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> cl<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>clall <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment"># 黑色</span>
+                    img_encoding<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                    img_encoding<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+        array_img <span class="token operator">=</span> array<span class="token punctuation">(</span>img_encoding<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> array_img
+
+    <span class="token keyword">def</span> <span class="token function">traindata</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> datadir<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        labels <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token comment">#labels代表种类的意思，一共有10类，即数字从0到9</span>
+        trainfile <span class="token operator">=</span> listdir<span class="token punctuation">(</span>datadir<span class="token punctuation">)</span>
+        num <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>trainfile<span class="token punctuation">)</span>
+        trainarr <span class="token operator">=</span> zeros<span class="token punctuation">(</span><span class="token punctuation">(</span>num<span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token comment">#trainarr为初始化为0的高为num，宽为200的矩阵（2维数组）</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            thisfname <span class="token operator">=</span> trainfile<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+            thislabel <span class="token operator">=</span> thisfname<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'_'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+            labels<span class="token punctuation">.</span>append<span class="token punctuation">(</span>thislabel<span class="token punctuation">)</span>
+            <span class="token comment"># pdb.set_trace()</span>
+            trainarr<span class="token punctuation">[</span>i<span class="token punctuation">,</span> <span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token operator">=</span> loadtxt<span class="token punctuation">(</span>datadir <span class="token operator">+</span> <span class="token string">'/'</span> <span class="token operator">+</span> thisfname<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> trainarr<span class="token punctuation">,</span> labels
+
+    <span class="token keyword">def</span> <span class="token function">knn</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> k<span class="token punctuation">,</span> testdata<span class="token punctuation">,</span> traindata<span class="token punctuation">,</span> labels<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># testdata:一维数组</span>
+        <span class="token comment"># traindata：二维数组</span>
+        <span class="token comment"># labels：一维列表，跟traindata一一对应</span>
+        <span class="token comment"># 以下shape取的是训练数据的第一维，即其行数，也就是训练数据的个数</span>
+        traindatasize <span class="token operator">=</span> traindata<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+        dif <span class="token operator">=</span> tile<span class="token punctuation">(</span>testdata<span class="token punctuation">,</span> <span class="token punctuation">(</span>traindatasize<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">-</span> traindata
+        <span class="token comment">#tile()的意思是给一维的测试数据转为与训练数据一样的行和列的格式</span>
+        sqdif <span class="token operator">=</span> dif <span class="token operator">**</span> <span class="token number">2</span>
+        sumsqdif <span class="token operator">=</span> sqdif<span class="token punctuation">.</span><span class="token builtin">sum</span><span class="token punctuation">(</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token comment">#axis=1-----》横向相加的意思</span>
+        <span class="token comment">#sumsqdif在此时已经成为1维的了</span>
+        distance <span class="token operator">=</span> sumsqdif <span class="token operator">**</span> <span class="token number">0.5</span>
+        sortdistance <span class="token operator">=</span> distance<span class="token punctuation">.</span>argsort<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment">#sortdistance为测试数据到各个训练数据的距离按近到远排序之后的结果</span>
+        count <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            vote <span class="token operator">=</span> labels<span class="token punctuation">[</span>sortdistance<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span>
+            <span class="token comment">#sortdistance[i]测试数据最近的K个训练数据的下标</span>
+            <span class="token comment">#vote测试数据最近的K个训练数据的类别</span>
+            count<span class="token punctuation">[</span>vote<span class="token punctuation">]</span> <span class="token operator">=</span> count<span class="token punctuation">.</span>get<span class="token punctuation">(</span>vote<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span>
+        sortcount <span class="token operator">=</span> <span class="token builtin">sorted</span><span class="token punctuation">(</span>
+            count<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> key<span class="token operator">=</span>operator<span class="token punctuation">.</span>itemgetter<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> reverse<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> sortcount<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">def</span> <span class="token function">recognize_code</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> img_path<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        img <span class="token operator">=</span> Image<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span>img_path<span class="token punctuation">)</span>
+        img <span class="token operator">=</span> img<span class="token punctuation">.</span>convert<span class="token punctuation">(</span><span class="token string">'RGB'</span><span class="token punctuation">)</span>
+        code <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment">#把图片切分成五部分，每一部分都调用一次knn算法</span>
+            region <span class="token operator">=</span> <span class="token punctuation">(</span>i <span class="token operator">*</span> <span class="token number">10</span> <span class="token operator">-</span> <span class="token number">3.2</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">10</span> <span class="token operator">+</span> i <span class="token operator">*</span> <span class="token number">10</span> <span class="token operator">-</span> <span class="token number">3.2</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">)</span>
+            <span class="token comment">#3.2是测试出来的</span>
+            cropImg <span class="token operator">=</span> img<span class="token punctuation">.</span>crop<span class="token punctuation">(</span>region<span class="token punctuation">)</span>
+            img_array <span class="token operator">=</span> self<span class="token punctuation">.</span>encode_img<span class="token punctuation">(</span>cropImg<span class="token punctuation">)</span>
+            trainarr<span class="token punctuation">,</span> labels <span class="token operator">=</span> self<span class="token punctuation">.</span>traindata<span class="token punctuation">(</span><span class="token string">'train/data'</span><span class="token punctuation">)</span>
+            number <span class="token operator">=</span> self<span class="token punctuation">.</span>knn<span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">,</span> img_array<span class="token punctuation">,</span> trainarr<span class="token punctuation">,</span> labels<span class="token punctuation">)</span>
+            code<span class="token punctuation">.</span>append<span class="token punctuation">(</span>number<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token string">""</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>code<span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    knn <span class="token operator">=</span> MyKnn<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    code <span class="token operator">=</span> knn<span class="token punctuation">.</span>recognize_code<span class="token punctuation">(</span><span class="token string">'test/test.jpg'</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>code<span class="token punctuation">)</span>
+</pre><h3 class="mume-header" id="4-%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1%E6%80%BB%E7%BB%93">4. 课程设计总结</h3>
+
+<p>在大二的尾声里，我也即将写完第4个学期的软件实践班的课程大作业，回望过去的两年，我在计算机科学的海洋里像一块海绵一样，疯狂地汲取了水分，增长了知识和见解，提高了自己的编程能力。我发现我知道的东西越多，自己的知识面就越来越小，我认为和登山站高望远的道理一样，计算机科学是值得这一辈子好好钻研的，希望自己在剩下的本科的两年，踏踏实实地好好学下去。比如在机器学习地方向，抑或是我更感兴趣的计算机架构方向上，加油！</p>
+<h3 class="mume-header" id="%E9%99%84%E5%BD%95">附录：</h3>
+
+<ol>
+<li>以上所有代码可在 <a href="https://github.com/fuujiro/machine-learning">https://github.com/fuujiro/machine-learning</a> 上下载。</li>
+<li>文章同步发布在我的Blog：<a href="https://blog.fuujiro.com">https://blog.fuujiro.com</a></li>
+</ol>
+
+      </div>
+      
+      
+    </body>
+    
+    
+    
+    
+    
+    
+    
+  </html>
